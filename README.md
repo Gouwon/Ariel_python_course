@@ -1,0 +1,2 @@
+# Ariel_python_course
+Ariel_python_course_for_3_months
