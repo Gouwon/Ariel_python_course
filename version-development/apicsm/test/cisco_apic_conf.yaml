@@ -1,0 +1,11 @@
+## est
+test: 1
+
+cisco_apic_ip: localhost
+#cisco_apic_id: admin
+#cisco_apic_pw: Anwkddo!07
+cisco_apic_id: dj5gim
+cisco_apic_pw: anwkddo!07
+cisco_apic_port: 50020
+
+cisco_apic_key: kkkkkkkkkkkkkkkkkkk

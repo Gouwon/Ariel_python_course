@@ -1,0 +1,715 @@
+{
+	"pod-1":[
+		{
+		  "faultInst": {
+		    "attributes": {
+		      "ack": "no",
+		      "cause": "download-failed",
+		      "changeSet": "lastPolled (Old: 2019-04-17T20:16:59.276+09:00, New: 2019-04-17T22:30:37.981+09:00), operQualStr (Old:  (1555499819866), New:  (1555507838285))",
+		      "childAction": "",
+		      "code": "F0058",
+		      "created": "2019-04-17T20:11:13.246+09:00",
+		      "delegated": "no",
+		      "descr": "Failed to download the firmware image from source: Uploads, reason: Bad image, details:  (1555507838285)",
+		      "dn": "topology/pod-1/node-1/local/svc-bootmgr-id-255/uni/fabric/fwrepop/isrc-Uploads/download-Uploads/fault-F0058",
+		      "domain": "infra",
+		      "highestSeverity": "major",
+		      "lastTransition": "2019-04-17T20:13:25.695+09:00",
+		      "lc": "raised",
+		      "occur": "1",
+		      "origSeverity": "major",
+		      "prevSeverity": "major",
+		      "rule": "firmware-download-download-failed",
+		      "severity": "cleared",
+		      "status": "",
+		      "subject": "equipment",
+		      "type": "environmental"
+		    }
+		  }
+		},
+		{
+		  "faultInst": {
+		    "attributes": {
+		      "ack": "yes",
+		      "cause": "port-down",
+		      "changeSet": "operSt (Old: up, New: down)",
+		      "childAction": "",
+		      "code": "F0103",
+		      "created": "2019-03-17T16:12:44.957+09:00",
+		      "delegated": "no",
+		      "descr": "Physical Interface eth1\/2 on Node 102 is now down",
+		      "dn": "topology/pod-1/node-102/sys/cphys-[eth1/2]/fault-F0103",
+		      "domain": "infra",
+		      "highestSeverity": "major",
+		      "lastTransition": "2019-03-18T22:24:46.333+09:00",
+		      "lc": "raised",
+		      "occur": "2",
+		      "origSeverity": "major",
+		      "prevSeverity": "cleared",
+		      "rule": "cnw-phys-if-down",
+		      "severity": "major",
+		      "status": "",
+		      "subject": "equipment",
+		      "type": "operational"
+		    }
+		  }
+		},
+		// test
+		{
+		  "faultInst": {
+		    "attributes": {
+		      "ack": "yes",
+		      "cause": "interface-physical-down",
+		      "changeSet": "lastLinkStChg (New: 2018-11-20T16:46:49.662+09:00), operBitset (New: 4,19,35)",
+		      "childAction": "",
+		      "code": "F1394",
+		      "created": "2019-04-20T13:17:16.943+09:00",
+		      "delegated": "no",
+		      "descr": "Port is down, reason:sfpAbsent(connected), used by:Fabric",
+		      "dn": "topology/pod-1/node-101/sys/phys-[eth1/1]/phys/fault-F1394",
+		      "domain": "access",
+		      "highestSeverity": "minor",
+		      "lastTransition": "2019-04-20T13:17:16.943+09:00",
+		      "lc": "raised",
+		      "occur": "5",
+		      "origSeverity": "minor",
+		      "prevSeverity": "cleared",
+		      "rule": "ethpm-if-port-down-fabric",
+		      "severity": "minor",
+		      "status": "",
+		      "subject": "port-down",
+		      "type": "communications"
+		    }
+		  }
+		},
+		{
+			  "faultInst": {
+			    "attributes": {
+			      "ack": "yes",
+			      "cause": "interface-physical-down",
+			      "changeSet": "lastLinkStChg (New: 2018-11-20T16:46:49.662+09:00), operBitset (New: 4,19,35)",
+			      "childAction": "",
+			      "code": "F1394",
+			      "created": "2019-04-20T14:17:16.943+09:00",
+			      "delegated": "no",
+			      "descr": "Port is down, reason:sfpAbsent(connected), used by:Fabric",
+			      "dn": "topology/pod-1/node-1011/sys/phys-[eth1/49]/phys/fault-F1394",
+			      "domain": "access",
+			      "highestSeverity": "minor",
+			      "lastTransition": "2019-04-20T14:17:16.943+09:00",
+			      "lc": "raised",
+			      "occur": "5",
+			      "origSeverity": "minor",
+			      "prevSeverity": "cleared",
+			      "rule": "ethpm-if-port-down-fabric",
+			      "severity": "minor",
+			      "status": "",
+			      "subject": "port-down",
+			      "type": "communications"
+			    }
+			  }
+		},
+		{
+			  "faultInst": {
+			    "attributes": {
+			      "ack": "yes",
+			      "cause": "port-down",
+			      "changeSet": "operSt (Old: up, New: down)",
+			      "childAction": "",
+			      "code": "F0103",
+			      "created": "2019-04-20T16:12:44.957+09:00",
+			      "delegated": "no",
+			      "descr": "Physical Interface eth1\/49 on Node 1011 is now down",
+			      "dn": "topology/pod-1/node-1011/sys/cphys-[eth1/49]/fault-F0103",
+			      "domain": "infra",
+			      "highestSeverity": "major",
+			      "lastTransition": "2019-04-20T16:12:44.957+09:00",
+			      "lc": "raised",
+			      "occur": "2",
+			      "origSeverity": "major",
+			      "prevSeverity": "cleared",
+			      "rule": "cnw-phys-if-down",
+			      "severity": "major",
+			      "status": "",
+			      "subject": "equipment",
+			      "type": "operational"
+			    }
+			  }
+		},
+		{
+			  "faultInst": {
+			    "attributes": {
+			      "ack": "yes",
+			      "cause": "interface-physical-down",
+			      "changeSet": "lastLinkStChg (New: 2018-11-20T16:46:49.662+09:00), operBitset (New: 4,19,35)",
+			      "childAction": "",
+			      "code": "F1394",
+			      "created": "2019-04-20T17:17:16.943+09:00",
+			      "delegated": "no",
+			      "descr": "Port is down, reason:sfpAbsent(connected), used by:Fabric",
+			      "dn": "topology/pod-1/node-1011/sys/phys-[eth1/2]/phys/fault-F1394",
+			      "domain": "access",
+			      "highestSeverity": "minor",
+			      "lastTransition": "2019-04-20T17:17:16.943+09:00",
+			      "lc": "raised",
+			      "occur": "5",
+			      "origSeverity": "minor",
+			      "prevSeverity": "cleared",
+			      "rule": "ethpm-if-port-down-fabric",
+			      "severity": "minor",
+			      "status": "",
+			      "subject": "port-down",
+			      "type": "communications"
+			    }
+			  }
+		},
+		{
+			  "faultInst": {
+			    "attributes": {
+			      "ack": "yes",
+			      "cause": "port-down",
+			      "changeSet": "operSt (Old: up, New: down)",
+			      "childAction": "",
+			      "code": "F0103",
+			      "created": "2019-04-20T18:12:44.957+09:00",
+			      "delegated": "no",
+			      "descr": "Physical Interface eth1\/2 on Node 1011 is now down",
+			      "dn": "topology/pod-1/node-1011/sys/cphys-[eth1/2]/fault-F0103",
+			      "domain": "infra",
+			      "highestSeverity": "major",
+			      "lastTransition": "2019-04-20T18:12:44.957+09:00",
+			      "lc": "raised",
+			      "occur": "2",
+			      "origSeverity": "major",
+			      "prevSeverity": "cleared",
+			      "rule": "cnw-phys-if-down",
+			      "severity": "major",
+			      "status": "",
+			      "subject": "equipment",
+			      "type": "operational"
+			    }
+			  }
+		},
+		{
+			  "faultInst": {
+			    "attributes": {
+			      "ack": "yes",
+			      "cause": "interface-physical-down",
+			      "changeSet": "lastLinkStChg (New: 2018-11-20T16:46:49.662+09:00), operBitset (New: 4,19,35)",
+			      "childAction": "",
+			      "code": "F1394",
+			      "created": "2019-04-20T19:17:16.943+09:00",
+			      "delegated": "no",
+			      "descr": "Port is down, reason:sfpAbsent(connected), used by:Fabric",
+			      "dn": "topology/pod-1/node-1021/sys/phys-[eth1/50]/phys/fault-F1394",
+			      "domain": "access",
+			      "highestSeverity": "minor",
+			      "lastTransition": "2019-04-20T19:17:16.943+09:00",
+			      "lc": "raised",
+			      "occur": "5",
+			      "origSeverity": "minor",
+			      "prevSeverity": "cleared",
+			      "rule": "ethpm-if-port-down-fabric",
+			      "severity": "minor",
+			      "status": "",
+			      "subject": "port-down",
+			      "type": "communications"
+			    }
+			  }
+		},
+		{
+			  "faultInst": {
+			    "attributes": {
+			      "ack": "yes",
+			      "cause": "port-down",
+			      "changeSet": "operSt (Old: up, New: down)",
+			      "childAction": "",
+			      "code": "F0103",
+			      "created": "2019-04-20T20:12:44.957+09:00",
+			      "delegated": "no",
+			      "descr": "Physical Interface eth1\/50 on Node 1021 is now down",
+			      "dn": "topology/pod-1/node-1021/sys/cphys-[eth1/50]/fault-F0103",
+			      "domain": "infra",
+			      "highestSeverity": "major",
+			      "lastTransition": "2019-04-20T20:12:44.957+09:00",
+			      "lc": "raised",
+			      "occur": "2",
+			      "origSeverity": "major",
+			      "prevSeverity": "cleared",
+			      "rule": "cnw-phys-if-down",
+			      "severity": "major",
+			      "status": "",
+			      "subject": "equipment",
+			      "type": "operational"
+			    }
+			  }
+		},
+		{
+			  "faultInst": {
+			    "attributes": {
+			      "ack": "yes",
+			      "cause": "interface-physical-down",
+			      "changeSet": "lastLinkStChg (New: 2018-11-20T16:46:49.662+09:00), operBitset (New: 4,19,35)",
+			      "childAction": "",
+			      "code": "F1394",
+			      "created": "2019-04-21T14:17:16.943+09:00",
+			      "delegated": "no",
+			      "descr": "Port is down, reason:sfpAbsent(connected), used by:Fabric",
+			      "dn": "topology/pod-1/node-1021/sys/phys-[eth1/4]/phys/fault-F1394",
+			      "domain": "access",
+			      "highestSeverity": "minor",
+			      "lastTransition": "2019-04-21T14:17:16.943+09:00",
+			      "lc": "raised",
+			      "occur": "5",
+			      "origSeverity": "minor",
+			      "prevSeverity": "cleared",
+			      "rule": "ethpm-if-port-down-fabric",
+			      "severity": "minor",
+			      "status": "",
+			      "subject": "port-down",
+			      "type": "communications"
+			    }
+			  }
+		},
+		{
+			  "faultInst": {
+			    "attributes": {
+			      "ack": "yes",
+			      "cause": "interface-physical-down",
+			      "changeSet": "lastLinkStChg (New: 2018-11-20T16:46:49.662+09:00), operBitset (New: 4,19,35)",
+			      "childAction": "",
+			      "code": "F1394",
+			      "created": "2019-04-21T15:17:16.943+09:00",
+			      "delegated": "no",
+			      "descr": "Port is down, reason:sfpAbsent(connected), used by:Fabric",
+			      "dn": "topology/pod-1/node-1031/sys/phys-[eth1/14]/phys/fault-F1394",
+			      "domain": "access",
+			      "highestSeverity": "minor",
+			      "lastTransition": "2019-04-21T15:17:16.943+09:00",
+			      "lc": "raised",
+			      "occur": "5",
+			      "origSeverity": "minor",
+			      "prevSeverity": "cleared",
+			      "rule": "ethpm-if-port-down-fabric",
+			      "severity": "minor",
+			      "status": "",
+			      "subject": "port-down",
+			      "type": "communications"
+			    }
+			  }
+		},
+		{
+			  "faultInst": {
+			    "attributes": {
+			      "ack": "yes",
+			      "cause": "interface-physical-down",
+			      "changeSet": "lastLinkStChg (New: 2018-11-20T16:46:49.662+09:00), operBitset (New: 4,19,35)",
+			      "childAction": "",
+			      "code": "F1394",
+			      "created": "2019-04-21T16:17:16.943+09:00",
+			      "delegated": "no",
+			      "descr": "Port is down, reason:sfpAbsent(connected), used by:Fabric",
+			      "dn": "topology/pod-1/node-1042/sys/phys-[eth1/5]/phys/fault-F1394",
+			      "domain": "access",
+			      "highestSeverity": "minor",
+			      "lastTransition": "2019-04-21T16:17:16.943+09:00",
+			      "lc": "raised",
+			      "occur": "5",
+			      "origSeverity": "minor",
+			      "prevSeverity": "cleared",
+			      "rule": "ethpm-if-port-down-fabric",
+			      "severity": "minor",
+			      "status": "",
+			      "subject": "port-down",
+			      "type": "communications"
+			    }
+			  }
+		},
+		{
+			  "faultInst": {
+			    "attributes": {
+			      "ack": "yes",
+			      "cause": "port-down",
+			      "changeSet": "operSt (Old: up, New: down)",
+			      "childAction": "",
+			      "code": "F0103",
+			      "created": "2019-04-21T17:12:44.957+09:00",
+			      "delegated": "no",
+			      "descr": "Physical Interface eth1\/5 on Node 1042 is now down",
+			      "dn": "topology/pod-1/node-1042/sys/cphys-[eth1/5]/fault-F0103",
+			      "domain": "infra",
+			      "highestSeverity": "major",
+			      "lastTransition": "2019-04-21T17:12:44.957+09:00",
+			      "lc": "raised",
+			      "occur": "2",
+			      "origSeverity": "major",
+			      "prevSeverity": "cleared",
+			      "rule": "cnw-phys-if-down",
+			      "severity": "major",
+			      "status": "",
+			      "subject": "equipment",
+			      "type": "operational"
+			    }
+			  }
+		}
+//			{
+//				  "faultInst": {
+//				    "attributes": {
+//				      "ack": "no",
+//				      "cause": "port-down",
+//				      "changeSet": "operSt (Old: up, New: down)",
+//				      "childAction": "",
+//				      "code": "F0103",
+//				      "created": "2019-03-17T16:12:44.957+09:00",
+//				      "delegated": "no",
+//				      "descr": "Physical Interface eth1\/5 on Node 102 is now down",
+//				      "dn": "topology/pod-1/node-1042/sys/cphys-[eth1/5]/fault-F0103",
+//				      "domain": "infra",
+//				      "highestSeverity": "major",
+//				      "lastTransition": "2019-03-18T22:24:46.333+09:00",
+//				      "lc": "raised",
+//				      "occur": "2",
+//				      "origSeverity": "major",
+//				      "prevSeverity": "cleared",
+//				      "rule": "cnw-phys-if-down",
+//				      "severity": "major",
+//				      "status": "",
+//				      "subject": "equipment",
+//				      "type": "operational"
+//				    }
+//				  }
+//				}
+	],
+	"pod-2":[
+	{
+	  "faultInst": {
+	    "attributes": {
+	      "ack": "yes",
+	      "cause": "equipment-psu-missing",
+	      "changeSet": "cardOperSt:unknown, descr:PSU slot, id:6, loc:front, operSt:empty, physId:6, type:psuslot",
+	      "childAction": "",
+	      "code": "F0413",
+	      "created": "2019-01-30T21:27:36.176+09:00",
+	      "delegated": "no",
+	      "descr": "power supply missing",
+	      "dn": "topology/pod-2/node-201/sys/ch/psuslot-6/fault-F0413",
+	      "domain": "infra",
+	      "highestSeverity": "minor",
+	      "lastTransition": "2019-01-30T21:29:59.591+09:00",
+	      "lc": "raised",
+	      "occur": "1",
+	      "origSeverity": "minor",
+	      "prevSeverity": "minor",
+	      "rule": "eqpt-psu-slot-psu-missing",
+	      "severity": "minor",
+	      "status": "",
+	      "subject": "psu-missing",
+	      "type": "environmental"
+	    }
+	  }
+	},
+	{
+	  "faultInst": {
+	    "attributes": {
+	      "ack": "yes",
+	      "cause": "equipment-psu-missing",
+	      "changeSet": "cardOperSt:unknown, descr:PSU slot, id:7, loc:front, operSt:empty, physId:7, type:psuslot",
+	      "childAction": "",
+	      "code": "F0413",
+	      "created": "2019-01-30T21:27:36.179+09:00",
+	      "delegated": "no",
+	      "descr": "power supply missing",
+	      "dn": "topology/pod-2/node-201/sys/ch/psuslot-7/fault-F0413",
+	      "domain": "infra",
+	      "highestSeverity": "minor",
+	      "lastTransition": "2019-01-30T21:29:59.591+09:00",
+	      "lc": "raised",
+	      "occur": "1",
+	      "origSeverity": "minor",
+	      "prevSeverity": "minor",
+	      "rule": "eqpt-psu-slot-psu-missing",
+	      "severity": "minor",
+	      "status": "",
+	      "subject": "psu-missing",
+	      "type": "environmental"
+	    }
+	  }
+	},
+	{
+	  "faultInst": {
+	    "attributes": {
+	      "ack": "yes",
+	      "cause": "equipment-psu-missing",
+	      "changeSet": "cardOperSt:unknown, descr:PSU slot, id:8, loc:front, operSt:empty, physId:8, type:psuslot",
+	      "childAction": "",
+	      "code": "F0413",
+	      "created": "2019-01-30T21:27:36.181+09:00",
+	      "delegated": "no",
+	      "descr": "power supply missing",
+	      "dn": "topology/pod-2/node-201/sys/ch/psuslot-8/fault-F0413",
+	      "domain": "infra",
+	      "highestSeverity": "minor",
+	      "lastTransition": "2019-01-30T21:29:59.591+09:00",
+	      "lc": "raised",
+	      "occur": "1",
+	      "origSeverity": "minor",
+	      "prevSeverity": "minor",
+	      "rule": "eqpt-psu-slot-psu-missing",
+	      "severity": "minor",
+	      "status": "",
+	      "subject": "psu-missing",
+	      "type": "environmental"
+	    }
+	  }
+	},
+	{
+	  "faultInst": {
+	    "attributes": {
+	      "ack": "yes",
+	      "cause": "equipment-psu-missing",
+	      "changeSet": "cardOperSt:unknown, descr:PSU slot, id:6, loc:front, operSt:empty, physId:6, type:psuslot",
+	      "childAction": "",
+	      "code": "F0413",
+	      "created": "2019-01-30T21:41:33.744+09:00",
+	      "delegated": "no",
+	      "descr": "power supply missing",
+	      "dn": "topology/pod-2/node-202/sys/ch/psuslot-6/fault-F0413",
+	      "domain": "infra",
+	      "highestSeverity": "minor",
+	      "lastTransition": "2019-01-30T21:43:56.110+09:00",
+	      "lc": "raised",
+	      "occur": "1",
+	      "origSeverity": "minor",
+	      "prevSeverity": "minor",
+	      "rule": "eqpt-psu-slot-psu-missing",
+	      "severity": "minor",
+	      "status": "",
+	      "subject": "psu-missing",
+	      "type": "environmental"
+	    }
+	  }
+	},
+	{
+	  "faultInst": {
+	    "attributes": {
+	      "ack": "yes",
+	      "cause": "equipment-psu-missing",
+	      "changeSet": "cardOperSt:unknown, descr:PSU slot, id:7, loc:front, operSt:empty, physId:7, type:psuslot",
+	      "childAction": "",
+	      "code": "F0413",
+	      "created": "2019-01-30T21:41:33.746+09:00",
+	      "delegated": "no",
+	      "descr": "power supply missing",
+	      "dn": "topology/pod-2/node-202/sys/ch/psuslot-7/fault-F0413",
+	      "domain": "infra",
+	      "highestSeverity": "minor",
+	      "lastTransition": "2019-01-30T21:43:56.110+09:00",
+	      "lc": "raised",
+	      "occur": "1",
+	      "origSeverity": "minor",
+	      "prevSeverity": "minor",
+	      "rule": "eqpt-psu-slot-psu-missing",
+	      "severity": "minor",
+	      "status": "",
+	      "subject": "psu-missing",
+	      "type": "environmental"
+	    }
+	  }
+	},
+	{
+	  "faultInst": {
+	    "attributes": {
+	      "ack": "yes",
+	      "cause": "equipment-psu-missing",
+	      "changeSet": "cardOperSt:unknown, descr:PSU slot, id:8, loc:front, operSt:empty, physId:8, type:psuslot",
+	      "childAction": "",
+	      "code": "F0413",
+	      "created": "2019-01-30T21:41:33.748+09:00",
+	      "delegated": "no",
+	      "descr": "power supply missing",
+	      "dn": "topology/pod-2/node-202/sys/ch/psuslot-8/fault-F0413",
+	      "domain": "infra",
+	      "highestSeverity": "minor",
+	      "lastTransition": "2019-01-30T21:43:56.110+09:00",
+	      "lc": "raised",
+	      "occur": "1",
+	      "origSeverity": "minor",
+	      "prevSeverity": "minor",
+	      "rule": "eqpt-psu-slot-psu-missing",
+	      "severity": "minor",
+	      "status": "",
+	      "subject": "psu-missing",
+	      "type": "environmental"
+	    }
+	  }
+	}
+	         ],
+	"pod-3":[
+{
+	  "faultInst": {
+	    "attributes": {
+	      "ack": "yes",
+	      "cause": "port-down",
+	      "changeSet": "operSt (Old: up, New: down)",
+	      "childAction": "",
+	      "code": "F0103",
+	      "created": "2018-11-17T13:00:20.808+09:00",
+	      "delegated": "no",
+	      "descr": "Physical Interface eth1\/2 on Node 301 is now down",
+	      "dn": "topology/pod-3/node-301/sys/cphys-[eth1/2]/fault-F0103",
+	      "domain": "infra",
+	      "highestSeverity": "major",
+	      "lastTransition": "2018-11-17T22:24:56.486+09:00",
+	      "lc": "raised",
+	      "occur": "2",
+	      "origSeverity": "major",
+	      "prevSeverity": "cleared",
+	      "rule": "cnw-phys-if-down",
+	      "severity": "major",
+	      "status": "",
+	      "subject": "equipment",
+	      "type": "operational"
+	    }
+	  }
+	},
+	{
+	  "faultInst": {
+	    "attributes": {
+	      "ack": "yes",
+	      "cause": "interface-physical-down",
+	      "changeSet": "operStQual (New: sfp-missing)",
+	      "childAction": "",
+	      "code": "F1394",
+	      "created": "2019-01-29T18:05:41.828+09:00",
+	      "delegated": "no",
+	      "descr": "Port is down, reason:sfpAbsent(connected), used by:Fabric",
+	      "dn": "topology/pod-3/node-302/sys/phys-[eth1/5]/phys/fault-F1394",
+	      "domain": "access",
+	      "highestSeverity": "minor",
+	      "lastTransition": "2019-01-29T18:07:48.177+09:00",
+	      "lc": "raised",
+	      "occur": "1",
+	      "origSeverity": "minor",
+	      "prevSeverity": "minor",
+	      "rule": "ethpm-if-port-down-fabric",
+	      "severity": "warning",
+	      "status": "",
+	      "subject": "port-down",
+	      "type": "communications"
+	    }
+	  }
+	},
+	{
+	  "faultInst": {
+	    "attributes": {
+	      "ack": "yes",
+	      "cause": "interface-physical-down",
+	      "changeSet": "operStQual (New: sfp-missing)",
+	      "childAction": "",
+	      "code": "F1394",
+	      "created": "2019-01-29T18:05:55.891+09:00",
+	      "delegated": "no",
+	      "descr": "Port is down, reason:sfpAbsent(connected), used by:Fabric",
+	      "dn": "topology/pod-3/node-302/sys/phys-[eth1/6]/phys/fault-F1394",
+	      "domain": "access",
+	      "highestSeverity": "minor",
+	      "lastTransition": "2019-01-29T18:08:18.182+09:00",
+	      "lc": "raised",
+	      "occur": "1",
+	      "origSeverity": "minor",
+	      "prevSeverity": "minor",
+	      "rule": "ethpm-if-port-down-fabric",
+	      "severity": "minor",
+	      "status": "",
+	      "subject": "port-down",
+	      "type": "communications"
+	    }
+	  }
+	},
+	{
+	  "faultInst": {
+	    "attributes": {
+	      "ack": "yes",
+	      "cause": "interface-physical-down",
+	      "changeSet": "operStQual (New: sfp-missing)",
+	      "childAction": "",
+	      "code": "F1394",
+	      "created": "2018-11-20T10:11:21.331+09:00",
+	      "delegated": "no",
+	      "descr": "Port is down, reason:sfpAbsent(connected), used by:Fabric",
+	      "dn": "topology/pod-3/node-302/sys/phys-[eth1/63]/phys/fault-F1394",
+	      "domain": "access",
+	      "highestSeverity": "minor",
+	      "lastTransition": "2018-11-20T16:44:53.510+09:00",
+	      "lc": "raised",
+	      "occur": "4",
+	      "origSeverity": "minor",
+	      "prevSeverity": "cleared",
+	      "rule": "ethpm-if-port-down-fabric",
+	      "severity": "minor",
+	      "status": "",
+	      "subject": "port-down",
+	      "type": "communications"
+	    }
+	  }
+	}
+	         ],
+	"pod-4":[
+	     		{
+	     		  "faultInst": {
+	     		    "attributes": {
+	     		      "ack": "no",
+	     		      "cause": "wiring-check-failed",
+	     		      "changeSet": "operStQual (New: sfp-missing)",
+	     		      "childAction": "",
+	     		      "code": "F0106",
+	     		      "created": "2019-04-09T10:16:21.331+09:00",
+	     		      "delegated": "no",
+	     		      "descr": "This fault occurs when a port is out-of-service because of a wiring error.",
+	     		      "dn": "topology/pod-4/node-401/sys/cphys-[eth1/4]/fault-F0106",
+	     		      "domain": "config",
+	     		      "highestSeverity": "critical",
+	     		      "lastTransition": "2019-04-09T10:16:21.331+09:00",
+	     		      "lc": "raised",
+	     		      "occur": "1",
+	     		      "origSeverity": "critical",
+	     		      "prevSeverity": "cleared",
+	     		      "rule": "ethpm-if-port-down-fabric",
+	     		      "severity": "cleared",
+	     		      "status": "",
+	     		      "subject": "wiring-check-failed",
+	     		      "type": "config"
+	     		    }
+	     		  }
+	     		},
+	     		{
+		     		  "faultInst": {
+		     		    "attributes": {
+		     		      "ack": "no",
+		     		      "cause": "invalid-port-speed-configured",
+		     		      "changeSet": "operStQual (New: sfp-missing)",
+		     		      "childAction": "",
+		     		      "code": "F2740",
+		     		      "created": "2019-05-17T14:12:21.331+09:00",
+		     		      "delegated": "no",
+		     		      "descr": "This fault occurs when port speed is configured to an invalid/unsupported value",
+		     		      "dn": "topology/pod-4/node-401/sys/phys-[eth1/4]/phys/fault/fault-F2740",
+		     		      "domain": "communications",
+		     		      "highestSeverity": "warning",
+		     		      "lastTransition": "2019-05-17T14:26:56.331+09:00",
+		     		      "lc": "raised",
+		     		      "occur": "1",
+		     		      "origSeverity": "warning",
+		     		      "prevSeverity": "cleared",
+		     		      "rule": "ethpm-if-port-down-fabric",
+		     		      "severity": "cleared",
+		     		      "status": "",
+		     		      "subject": "invalid-port-speed-configured",
+		     		      "type": "communications"
+		     		    }
+		     		  }
+		     		}
+	         
+	         
+	         ]
+}

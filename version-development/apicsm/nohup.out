@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "./apic_sim.py", line 137, in <module>
+    main(cfgFile)
+  File "./apic_sim.py", line 126, in main
+    startAPI(_app, _cfg)
+  File "./apic_sim.py", line 109, in startAPI
+    svr.start()
+  File "./apic_sim.py", line 64, in start
+    self.svr.bind(self._port)
+  File "/usr/local/lib/python3.6/dist-packages/tornado/tcpserver.py", line 205, in bind
+    port, address=address, family=family, backlog=backlog, reuse_port=reuse_port
+  File "/usr/local/lib/python3.6/dist-packages/tornado/netutil.py", line 174, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 98] Address already in use
