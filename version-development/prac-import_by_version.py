@@ -34,3 +34,8 @@ def test_module_import():
     return tlib.RES_SC
 
 test_module_import()
+
+
+## if sys.version_info[0] > 2:
+##     import importlib
+##     reload = imporlib.reload
